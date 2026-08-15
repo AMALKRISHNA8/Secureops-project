@@ -11,3 +11,5 @@ aiofiles==24.1.0
 httpx==0.28.1
 pytest==8.4.1
 pytest-asyncio==1.0.0
+pywin32==308
+
