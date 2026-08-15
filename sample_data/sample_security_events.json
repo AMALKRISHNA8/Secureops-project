@@ -1,0 +1,50 @@
+[
+  {
+    "source": "auth-server",
+    "source_ip": "192.168.1.50",
+    "destination_ip": "192.168.1.10",
+    "event_type": "failed_login",
+    "description": "Multiple failed authentication attempts detected",
+    "raw_data": {"username": "jdoe", "attempts": 5}
+  },
+  {
+    "source": "auth-server",
+    "source_ip": "10.0.0.25",
+    "destination_ip": "10.0.0.1",
+    "event_type": "successful_login",
+    "description": "User authenticated successfully",
+    "raw_data": {"username": "analyst01", "method": "password"}
+  },
+  {
+    "source": "network-monitor",
+    "source_ip": "192.168.1.105",
+    "destination_ip": "192.168.1.1",
+    "event_type": "port_scan",
+    "description": "Port scan detected on restricted ports",
+    "raw_data": {"ports_scanned": [22, 23, 445, 3389]}
+  },
+  {
+    "source": "endpoint-security",
+    "source_ip": "192.168.2.30",
+    "destination_ip": "192.168.2.1",
+    "event_type": "privilege_escalation",
+    "description": "Privilege escalation attempt detected",
+    "raw_data": {"user": "guest_user", "attempted_action": "modify_system_config"}
+  },
+  {
+    "source": "antivirus-engine",
+    "source_ip": "192.168.3.42",
+    "destination_ip": null,
+    "event_type": "malware_detected",
+    "description": "Test malware signature detected (test_malware_signature)",
+    "raw_data": {"filename": "test_sample.exe", "signature": "test_malware_signature"}
+  },
+  {
+    "source": "auth-server",
+    "source_ip": "172.16.0.100",
+    "destination_ip": "172.16.0.1",
+    "event_type": "suspicious_login",
+    "description": "Impossible travel detected - concurrent sessions from different locations",
+    "raw_data": {"username": "svc_account", "location1": "New York", "location2": "London"}
+  }
+]
