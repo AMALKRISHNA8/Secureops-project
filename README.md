@@ -8,6 +8,7 @@ SecureOps is a full-stack security monitoring platform that collects security ev
 Built as a portfolio-grade project demonstrating practical skills in cybersecurity, Python, FastAPI, React, and secure software development.
 
 ---
+
 ## 🎯 Features
 
 - **Security Dashboard** — Real-time overview with event timeline, severity distribution, and top threat sources
